@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PRDCRS | Home</title>
+        <script src="https://kit.fontawesome.com/0435733c2b.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <h1 class="cabecalho__logo"><a href="index.html" class="logo__link">PRDCRS</a></h1>
+            <div class="cabecalho__conteudo">
+                <button class="menu__lateral-botao"><i class="fa-solid fa-bars"></i></button>
+                <nav class="cabecalho__navegacao">
+                    <ul class="cabecalho__navegacao-lista">
+                        <li><a href="explorar.html" class="cabecalho__navegacao-link">Explorar</a></li>
+                        <li><a href="#" class="cabecalho__navegacao-link">Comunidade</a></li>
+                        <li><a href="#" class="cabecalho__navegacao-link">Marketplace</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <nav class="menu__lateral menu__lateral-ativo">
+            <a href="#" class="menu__lateral-link">Explorar</a>
+            <a href="#" class="menu__lateral-link">Comunidade</a>
+            <a href="#" class="menu__lateral-link">Marketplace</a>
+            <div class="menu__lateral-midias">
+                <a href="#" class="menu__lateral-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="menu__lateral-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="menu__lateral-link"><i class="fa-brands fa-spotify"></i></a>
+                <a href="#" class="menu__lateral-link"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </nav>
+
+        <main class="principal">
+            <section class="principal__apresentacao">
+                <p class="principal__apresentacao-texto">Conecte-se com produtores e artistas ao redor do mundo.</p>
+                <a href="singup.html" class="principal__apresentacao-botao">Comece agora</a>
+            </section>
+
+            <section class="destaques__produtores">
+                <div class="destaques__produtores-apresentacao">
+                    <p class="destaques__produtores-texto">Descubra produtores talentosos</p>
+                    <a href="explorar.html" class="destaques__produtores-link">Explorar</a>
+                </div>
+                    <div class="destaques__produtores-conteudo">
+                        <div class="destaques__produtores-demos">
+                            <audio src="audio/alternativo.wav" controls class="destaques__produtores-audio"></audio>
+                            <audio src="audio/hit.wav" controls class="destaques__produtores-audio"></audio>
+                            <audio src="audio/Travis Scott.wav" controls class="destaques__produtores-audio"></audio>
+                            <audio src="audio/type beat bk.wav" controls class="destaques__produtores-audio"></audio>
+                            <audio src="audio/boombap alternativo.wav" controls class="destaques__produtores-audio"></audio>
+                        </div>
+                        <div class="destaques__produtores-banner">
+                            <img src="img/artist3.jpg" id="destaques__produtores-imagem">
+                        </div>
+                    </div>    
+                </section>
+
+            <section class="cartoes">
+                <article class="cartao__comunidade">
+                        <img src="img/estudio2.jpg" class="cartao__imagem">
+                        <div class="cartao__comunidade-descricao">  
+                            <h2 class="cartao__titulo">Comunidade</h2>
+                            <p class="cartao__texto">Discussões - Fóruns - Colabs</p>
+                        </div> 
+                    <button class="cartao__botao cartao__botao-link" href="#"><i class="fa-solid fa-circle-play icones"></i></button>
+                </article>
+
+                <article class="cartao__musica">
+                        <img src="img/estudio3.jpg" class="cartao__imagem">
+                        <div class="cartao__musica-descricao">
+                            <h2 class="cartao__titulo">Músicas</h2>
+                            <p class="cartao__texto">Instrumentais - Playlists</p> 
+                        </div>    
+                    <button class="cartao__botao cartao__botao-link" href="#"><i class="fa-solid fa-music icones"></i></button>
+                </article>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <div class="rodape__conteudo">
+                <h2 class="rodape__titulo">PRDCRS</h2>
+                <p class="rodape__copyright">&copy; Copyright 2022 </p>
+            </div>
+            <div class="rodape__contato">
+                <nav class="rodape__navegacao">
+                    <a href="#" class="rodape__navegacao-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="rodape__navegacao-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="rodape__navegacao-link"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="#" class="rodape__navegacao-link"><i class="fa-brands fa-discord"></i></a>
+                </nav>
+                <p class="rodape__novidades">Quer receber novidades?</p> 
+                <div class="rodape__novidades-inputs">    
+                    <label for="email"></label> 
+                    <input id="email" type="email" class="rodape__input-email" placeholder="Insira seu email" required>
+                    <input id="email" type="submit" class="rodape__input-submit" value="&#10003;">
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="index.js"></script>
+</html>

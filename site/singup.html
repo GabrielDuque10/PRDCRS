@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRDCRS | Login ou Registro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+
+<body>
+    <main class="principal">
+        <section class="container">
+            <div class="signup__principal">
+                <h2 class="logo"><a class="logo__link" href="index.html">PRDCRS</a></h2>
+                <div class="signup">
+                    <button class="signup__texto botao__registro">Registre-se</button>
+                    <p class="signup__texto">ou</p>
+                    <button class="signup__texto botao__login">Faça login</button>
+                </div>
+            </div>
+            <div class="login__form">
+                <p class="login__titulo">Login</p>
+                <label for="emaillogin"></label>
+                <input type="email" id="emaillogin" placeholder="Email" class="login__input input" required>
+                <label for="senhalogin"></label>
+                <input type="password" id="senhalogin" placeholder="Senha" class="login__input input" required>
+                <div class="login__buttons">
+                    <label for="checkboxlogin" class="checkbox__Label">Lembrar</label>
+                    <input type="checkbox" id="checkboxlogin" class="checkbox__input">
+                    <input type="submit" value="Login &#10148" class="submit__input">
+                </div>
+            </div>
+            <div class="register__form">
+                <p class="register__titulo">Registre-se</p>
+                <label for="emailregister"></label>
+                <input type="email" id="emailregister" placeholder="Email" class="register__input input" required>
+                <label for="senharegister"></label>
+                <input type="password" id="senharegister" placeholder="Senha" class="register__input input" required>
+                <label for="confirmarsenha"></label>
+                <input type="password" id="confirmarsenha" placeholder="Confirme sua senha" class="register__input input" required>
+                <label for="telephone"></label>
+                <input type="tel" id="telephone" placeholder="Seu telefone" class="register__input input">
+                <div class="register__buttons">
+                    <label for="checkboxregister" class="checkbox__Label">Concordo com os termos de uso</label>
+                    <input type="checkbox" id="checkboxregister" class="checkbox__input" required>
+                    <input type="submit" value="Register &#10148" class="submit__input">
+                </div>
+            </div>
+            <img src="img/producer.jpg" alt="" class="banner">
+        </section>
+    </main>
+</body>
+<script src="signup.js"></script>
+
+</html>

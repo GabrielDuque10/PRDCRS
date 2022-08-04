@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'longshot';
+    src: url(../fonts/Long_Shot.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+}
+
+body {
+    background-image: linear-gradient(#181818, #242424);
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+.principal {
+    height: 100%;
+    width: 100%;
+    color: #242424;
+    padding: 7.9rem 0;
+}
+
+.container {
+    width: 75%;
+    margin: auto auto;
+    padding: 0.4rem;
+    border-radius: 10px;
+    background-color: #f1f3f4;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+
+.signup__principal {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    align-self: center;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.signup {
+    display: flex;
+}
+
+.signup__texto {
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    margin-left: 0.5rem;
+}
+
+.signup__texto:nth-child(odd) {
+    cursor: pointer;
+}
+
+.logo {
+    font-family: 'longshot', sans-serif;
+    font-size: 3.5rem;
+    letter-spacing: 0.4rem;
+}
+
+.logo__link {
+    text-decoration: none;
+    color: #242424;
+}
+
+.login__form {
+    display: none;
+}
+
+.register__form {
+    display: flex;
+}
+
+.login__form,
+.register__form {
+    justify-self: center;
+    width: 80%;
+    grid-column: 1 / 2;
+    flex-direction: column;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    transition: .25s;
+}
+
+.login__titulo,
+.register__titulo {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+.input {
+    border: none;
+    margin: 1rem 0;
+    border-left: 2px solid #c1c2c3;
+    border-radius: 10px;
+    padding: 1rem 0 1rem 1rem;
+    background-color: transparent;
+    
+}
+
+.login__buttons,
+.register__buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__input {
+    margin-left: 15px;
+    border: none;
+}
+
+.submit__input {
+    cursor: pointer;
+    background-color: #242424;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 0.7rem;
+    margin-left: 30%;
+}
+
+.banner {
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    border-radius: 10px;
+    place-self: center;
+}
+
+@media screen and (max-width:1440px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signup__principal {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 3rem;
+    }
+
+    .signup__texto {
+        font-size: 1.2rem;
+    }
+
+    .login__form,
+    .register__form {
+        padding: 0.8rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .login__titulo,
+    .register__titulo {
+        font-size: 1.5rem;
+    }
+
+    .checkbox__Label {
+        font-size: 1.2rem;
+    }
+
+    .banner {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signup__principal {
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 2.3rem;
+    }
+
+    .signup__texto {
+        font-size: 0.8rem;
+    }
+
+    .login__form,
+    .register__form {
+        padding: 0.2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .login__titulo,
+    .register__titulo {
+        font-size: 1rem;
+    }
+
+    .input {
+        padding: 0.8rem 0 0.8rem 0.8rem;
+        margin: 0.8rem 0;
+    }
+
+    .checkbox__Label {
+        font-size: 0.8rem;
+    }
+
+    .banner {
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signup__principal {
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .signup__texto {
+        font-size: 0.8rem;
+    }
+
+    .login__form,
+    .register__form {
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .login__titulo,
+    .register__titulo {
+        font-size: 1rem;
+    }
+
+    .input {
+        padding: 0.5rem 0 0.5rem 0.5rem;
+        margin: 0.8rem 0;
+    }
+
+    .checkbox__Label {
+        font-size: 0.7rem;
+    }
+
+    .submit__input {
+        margin-left: 2rem;
+    }
+
+    .banner {
+        display: none;
+    }
+
+}
